@@ -48,7 +48,7 @@ function TextForms(props) {
         </div>
         <div className="container my-5 card" >
         <h4>Your Text Summary</h4>
-            <p>{text.length} characters and {text.split(" ").length} words</p>
+            <p>{text.length} characters and {text.split(" ").filter((element)=>{return element.length!==0}).length} words</p>
             <h4>Preview</h4>
             <p>{text}</p>
         </div>
